@@ -83,5 +83,22 @@ public class Input {
             }
         }
     }
+
+    public static boolean readYesNo(String message) {
+        while (true) {
+            System.out.println(message);
+            String text = scanner.nextLine();
+            try {
+                if (text.equals("y")) {
+                    return true;
+                } else if (text.equals("n")) {
+                    return false;
+                }
+                throw new WrongInputTypeException();
+            } catch (WrongInputTypeException e) {
+                System.out.println(e.getMessage());
+            }
+        }
+    }
 }
 
