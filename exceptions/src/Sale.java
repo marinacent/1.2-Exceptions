@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Sale {
-    private ArrayList<Product> products;
+    private final ArrayList<Product> products;
     private int totalPrice;
 
     public Sale() {
