@@ -53,6 +53,19 @@ public class Input {
         }
     }
 
+    public static char readChar(String message) {
+        while (true) {
+            System.out.println(message);
+            String text = scanner.nextLine();
+            try {
+                if (text.length() == 1) {
+                    return text.charAt(0);
+                }
+                throw new WrongInputTypeException();
+            } catch (WrongInputTypeException e) {
+                System.out.println(e.getMessage());
+            }
+        }
+    }
 }
-
 
