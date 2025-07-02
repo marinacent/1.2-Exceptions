@@ -67,5 +67,21 @@ public class Input {
             }
         }
     }
+
+    public static String readString(String message) {
+        // not sure when i should throw an error
+        while (true) {
+            System.out.println(message);
+            String text = scanner.nextLine();
+            try {
+                if (text.length() > 1) {
+                    return text;
+                }
+                throw new WrongInputTypeException();
+            } catch (WrongInputTypeException e) {
+                System.out.println(e.getMessage());
+            }
+        }
+    }
 }
 

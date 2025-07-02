@@ -12,7 +12,10 @@ public class Main {
 //        double myDouble = Input.readDouble("Please enter a double: ");
 //        System.out.println(myDouble);
 
-        char myChar = Input.readChar("Please enter one character: ");
-        System.out.println(myChar);
+//        char myChar = Input.readChar("Please enter one character: ");
+//        System.out.println(myChar);
+
+        String myString = Input.readString("Please enter more than one character: ");
+        System.out.println(myString);
     }
 }
