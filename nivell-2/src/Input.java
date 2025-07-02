@@ -8,7 +8,9 @@ public class Input {
         while (true) {
             System.out.println(message);
             try {
-                return scanner.nextByte();
+                byte value = scanner.nextByte();
+                scanner.nextLine();
+                return value;
             } catch (InputMismatchException e) {
                 System.out.println("Format error");
                 scanner.next();
@@ -21,7 +23,9 @@ public class Input {
         while (true) {
             System.out.println(message);
             try {
-                return scanner.nextInt();
+                int value = scanner.nextInt();
+                scanner.nextLine();
+                return value;
             } catch (InputMismatchException e) {
                 System.out.println("Format error");
                 scanner.next();
@@ -33,7 +37,9 @@ public class Input {
         while (true) {
             System.out.println(message);
             try {
-                return scanner.nextFloat();
+                float value = scanner.nextFloat();
+                scanner.nextLine();
+                return value;
             } catch (InputMismatchException e) {
                 System.out.println("Format error");
                 scanner.next();
@@ -45,7 +51,9 @@ public class Input {
         while (true) {
             System.out.println(message);
             try {
-                return scanner.nextDouble();
+                double value = scanner.nextDouble();
+                scanner.nextLine();
+                return value;
             } catch (InputMismatchException e) {
                 System.out.println("Format error");
                 scanner.next();
