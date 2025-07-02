@@ -25,5 +25,12 @@ public class Main {
 
         System.out.println(afternoonSale.getTotalPrice());
 
+        Sale eveningSale = new Sale();
+        try {
+            System.out.println(eveningSale.findProduct(1).getName());
+        } catch (IndexOutOfBoundsException f) {
+            System.out.println(f.getMessage());
+        }
+
     }
 }

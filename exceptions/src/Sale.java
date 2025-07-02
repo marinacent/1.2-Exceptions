@@ -16,6 +16,10 @@ public class Sale {
         this.products.add(product);
     }
 
+    public Product findProduct(int index) {
+        return this.products.get(index);
+    }
+
     public void computeTotalPrice() throws EmptySaleException {
         if (products.isEmpty()) {
             throw new EmptySaleException();
