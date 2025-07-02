@@ -2,7 +2,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Input {
-    private static Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
 
     public static byte readByte(String message) {
         while (true) {
@@ -69,7 +69,6 @@ public class Input {
     }
 
     public static String readString(String message) {
-        // not sure when i should throw an error
         while (true) {
             System.out.println(message);
             String text = scanner.nextLine();

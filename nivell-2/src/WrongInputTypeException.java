@@ -1,4 +1,4 @@
-public class WrongInputTypeException extends RuntimeException {
+public class WrongInputTypeException extends Exception {
     public WrongInputTypeException() {
       super("Format error");
     }
