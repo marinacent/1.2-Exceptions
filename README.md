@@ -29,3 +29,21 @@
 5. For char, String and boolean, a custom exception that extends Exception must be used.
 6. Each method receives a String with the message to be shown to the user and returns the user’s input once valid.
 
+## 💻 Technologies used
+
+Java 21
+
+## 📋 Requirements
+
+Java 21
+
+## 🛠️ Set up
+
+1. Clone repository: -> git clone
+2. Access project repository: cd 1.2-Exceptions
+3. The *exceptions* folder contains level 1; *nivell-2* contains level 2.
+
+## ▶️ Run
+
+Open the folders in your IDE and run the Main files.
+
