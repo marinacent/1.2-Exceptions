@@ -9,8 +9,8 @@
     - A collection of products.
     - An attribute for the total price.
     - A method *computeTotalPrice()* that:
-        - Throws a custom exception *EmptySaleException* if the product collection is empty, with the message *To complete a sale, you need to add products*.
-        - If the collection is not empty, it adds the product prices and stores them in the total price attribute.
+        - Throws a custom exception *EmptySaleException* if the product collection is empty, with the message "To complete a sale, you need to add products".
+        - If the collection is not empty, it sums up the product prices and stores them in the total price attribute.
 3. The custom exception *EmptySaleException* extends Exception. Its constructor takes the messsage above, which you display using getMessage() when you catch the exception.
 
 ### Exercise 2
