@@ -17,13 +17,13 @@
 
 1. Create an *Input* class that uses Scanner to read user input.
 2. The class must provide methods to read different data types:
-  - byte
-  - int
-  - float
-  - double
-  - char
-  - String
-  - boolean
+    - byte
+    - int
+    - float
+    - double
+    - char
+    - String
+    - boolean
 3. If the user enters invalid input, the method should catch the exception, show an error message and ask again until the input is valid.
 4. For the byte, int, float and double data types, the exception InputMismatchException must be caught.
 5. For char, String and boolean, a custom exception that extends Exception must be used.
