@@ -12,7 +12,7 @@ public class Input {
                 scanner.nextLine();
                 return value;
             } catch (InputMismatchException e) {
-                System.out.println("Format error");
+                System.out.println("Format error. Byte expected.");
                 scanner.next();
             }
         }
@@ -27,7 +27,7 @@ public class Input {
                 scanner.nextLine();
                 return value;
             } catch (InputMismatchException e) {
-                System.out.println("Format error");
+                System.out.println("Format error. Int expected.");
                 scanner.next();
             }
         }
@@ -41,7 +41,7 @@ public class Input {
                 scanner.nextLine();
                 return value;
             } catch (InputMismatchException e) {
-                System.out.println("Format error");
+                System.out.println("Format error. Float expected.");
                 scanner.next();
             }
         }
@@ -55,7 +55,7 @@ public class Input {
                 scanner.nextLine();
                 return value;
             } catch (InputMismatchException e) {
-                System.out.println("Format error");
+                System.out.println("Format error. Double expected.");
                 scanner.next();
             }
         }
